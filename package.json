@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
+    "dev": "npm run dev --workspace=frontend & npm run dev --workspace=backend",
     "eslint": "eslint --init",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
