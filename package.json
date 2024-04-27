@@ -2,7 +2,6 @@
   "name": "csv-scanner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "workspaces": [
     "frontend",
     "backend"
