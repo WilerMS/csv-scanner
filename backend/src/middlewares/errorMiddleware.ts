@@ -21,6 +21,6 @@ export const errorMiddleware = (
     .status(500)
     .json({
       error: 'InternalServerError',
-      message: 'Something went wrong!'
+      message: 'Algo salió mal, vuelve a intentarlo más tarde.'
     })
 }
