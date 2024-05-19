@@ -12,7 +12,8 @@ export const errorMiddleware = (
       .status(err.status)
       .json({
         status: err.status,
-        error: err.name,
+        error: true,
+        name: err.name,
         message: err.message
       })
   }
@@ -20,7 +21,9 @@ export const errorMiddleware = (
   res
     .status(500)
     .json({
-      error: 'InternalServerError',
+      status: 500,
+      error: true,
+      name: 'InternalServerError',
       message: 'Algo salió mal, vuelve a intentarlo más tarde.'
     })
 }
