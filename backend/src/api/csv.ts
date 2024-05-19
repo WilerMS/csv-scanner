@@ -46,7 +46,7 @@ router.get('/csv', errorHandler((req, res) => {
   if (!fileId) throw new BadRequestError('Por favor, indique un csv (fileId) o suba uno.')
   if (!csvStorage[fileId]) throw new BadRequestError('El archivo ya no existe, vuelva a subirlo')
 
-  if (!q) return res.json({ data: csvStorage })
+  if (!q) return res.json(csvStorage[fileId])
 
   const data = csvStorage[fileId]
     .filter((obj) => {
@@ -55,7 +55,7 @@ router.get('/csv', errorHandler((req, res) => {
       ))
     })
 
-  return res.json({ data })
+  return res.json(data)
 }))
 
 export default router
