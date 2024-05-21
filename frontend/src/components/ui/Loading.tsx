@@ -1,4 +1,4 @@
-const Loading = () => {
+export const Loading = () => {
   return (
     <div className="w-full h-full flex flex-col justify-around">
       <h2 className='text-[18px] text-[#4F4F4F] mb-3'>Cargando...</h2>
@@ -8,5 +8,3 @@ const Loading = () => {
     </div>
   )
 }
-
-export default Loading
