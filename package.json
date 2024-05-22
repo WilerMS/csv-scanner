@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "workspaces": [
-    "frontend",
-    "backend"
+    "apps/*"
   ],
   "scripts": {
     "dev": "npm run dev --workspace=frontend & npm run dev --workspace=backend",
