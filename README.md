@@ -18,7 +18,7 @@ This repository contains a monorepo for a web application that **allows users to
 - [x] File uploader with drag-and-drop functionality
 - [x] API for uploading files to the server
 - [x] Server-side processing of the uploaded file
-- [x] File storage in a MongoDB database with a unique fileId
+- [x] File storage in a key-value object with fileId to share your searchs
 - [x] Search functionality from the frontend using the API
 - [x] Shareable search results via URL
 
